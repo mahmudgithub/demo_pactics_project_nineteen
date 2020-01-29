@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>জাভাস্ক্রিপ্ট উদাহরণ</title>
+</head>
+<body>
+
+<h3> আপনার বয়স সাবমিট করুন এবং বাটনে ক্লিক করুন :</h3>
+
+<input id="age" value="18" />
+
+<button onclick="myFunc()">সাবমিট </button>
+
+<p id="test"></p>
+
+<script>
+function myFunc() {
+    var age, voteable;
+    age = document.getElementById("age").value;
+    voteable = (age < 18) ? " অপ্রাপ্ত  বয়স্ক ":"  প্রাপ্ত বয়স্ক";
+    document.getElementById("test").innerHTML = voteable + " ভোট দেওয়ার জন্য";
+}
+</script>
+
+</body>
+</html>
